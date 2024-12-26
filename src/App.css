@@ -1,0 +1,42 @@
+/* Shared styles for both circles */
+.small-circle,
+.big-circle {
+  position: fixed;
+  pointer-events: none; /* Ensure the cursor isn't obstructed */
+  will-change: transform; /* Optimize for smoother animations */
+  transition: transform 0.2s ease-out, opacity 0.3s ease-out; /* Ensure smooth transitions for both size and opacity */
+}
+
+/* Small Circle */
+.small-circle {
+  width: 6px;
+  height: 6px;
+  background-color: #00bcd4;
+  border-radius: 50%;
+}
+
+/* Big Circle */
+.big-circle {
+  width: 30px; /* Big enough to wrap around the small circle */
+  height: 30px;
+  border: 1px solid #00bcd4;
+  border-radius: 50%;
+}
+
+/* Hover effect on circles when hovering over links or buttons */
+.small-circle.hovering {
+  transform: scale(12); /* Make small circle much bigger smoothly */
+  opacity: 0.2; /* Slight transparency */
+}
+
+.big-circle.hovering {
+  opacity: 0; /* Fade away the big circle smoothly */
+}
+
+/* Hide the cursor-following circles on touch devices */
+@media (pointer: coarse) {
+  .small-circle,
+  .big-circle {
+    display: none;
+  }
+}

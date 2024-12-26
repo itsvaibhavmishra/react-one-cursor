@@ -1,0 +1,44 @@
+{
+  "name": "react-one-cursor",
+  "version": "1.0.0",
+  "description": "A lightweight cursor-following animation component for React JS by Vaibhaw Mishra",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsvaibhavmishra/react-one-cursor.git"
+  },
+  "keywords": [
+    "react",
+    "cursor",
+    "react-one-cursor",
+    "vaibhaw",
+    "mishra",
+    "vaibhawmishra",
+    "react-cursor",
+    "cursor-animation",
+    "animation"
+  ],
+  "author": "Vaibhaw Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsvaibhavmishra/react-one-cursor/issues"
+  },
+  "homepage": "https://github.com/itsvaibhavmishra/react-one-cursor#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
